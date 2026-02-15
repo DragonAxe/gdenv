@@ -1,17 +1,25 @@
 use colored::*;
 
 pub fn success(msg: &str) {
-    println!("{} {}", "✅".green(), msg);
+    println!("{} {}", "[✓]".green(), msg);
 }
 
 pub fn error(msg: &str) {
-    println!("{} {}", "❌".red(), msg);
+    println!("{} {}", "[E]".red(), msg);
 }
 
 pub fn info(msg: &str) {
-    println!("{} {}", "ℹ️".blue(), msg);
+    println!("{} {}", "[ ]".blue(), msg);
 }
 
 pub fn warning(msg: &str) {
-    println!("{} {}", "⚠️".yellow(), msg);
+    println!("{} {}", "[W]".yellow(), msg);
+}
+
+pub fn helpful(msg: &str) {
+    println!("{} {}", "[i]".cyan(), msg);
+}
+
+pub fn question(msg: &str) {
+    println!("{} {}", "[?]".magenta(), msg);
 }
