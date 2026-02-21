@@ -37,6 +37,7 @@ pub struct SpecGodot {
 #[derive(Serialize, Deserialize, Debug, Default, Eq, PartialEq, Clone)]
 pub struct AddonSpec {
     pub include: Option<Vec<PathBuf>>,
+    pub exclude: Option<Vec<PathBuf>>,
     pub tag: Option<String>,
     pub branch: Option<String>,
     pub git: Option<String>,
